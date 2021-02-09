@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Algorithme en JavaScript</title>
+</head>
+<body>
+
+  <!-- Contenu HTML -->
+  <p>Un paragraphe en HTML</p>
+
+
+  <script type="text/javascript" language="JavaScript">
+  let montant_commande = prompt("le montant_commande");
+  montant_commande = parseFloat(montant_commande);
+  let fdp;
+  if(montant_commande > 100){
+    console.log("FDP offert");
+    fdp = 0;
+  }
+  else if(montant_commande < 25){
+    fdp = 6;
+  }
+  else if(montant_commande >= 25 && montant_commande <= 50){
+    fdp = 4;
+  }
+  else if(montant_commande > 50 && montant_commande <= 100){
+    fdp = 2;
+  }
+  console.log("prix : " + (montant_commande + fdp));
+
+  </script>
+</body>
+</html>
